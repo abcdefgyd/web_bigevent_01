@@ -12,10 +12,10 @@ $.ajaxPrefilter(function(options) {
       Authorization: localStorage.getItem('token') || ''
     }
   }
-
+//拦截所有响应，判断身份认证信息
   options.complete=function(res){
     var obj=res.responseJSON
-    if(obj.status==1&&obj.message=='身份认证失败！'){\
+    if(obj.status==1&&obj.message=='身份认证失败！'){
     //1清空本地token
     localStorage.removeItem('token')
     //2页面跳转
