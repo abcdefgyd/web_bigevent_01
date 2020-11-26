@@ -18,6 +18,7 @@ iframe {
 }
 
 .layui-body {
+  
   overflow: hidden;
 }
 
@@ -26,11 +27,11 @@ a {
 }
 
 .userinfo {
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  font-size: 12px;
-  user-select: none;
+height: 60px;
+line-height: 60px;
+text-align: center;
+font-size: 12px;
+user-select: none;
 }
 
 .layui-side-scroll .userinfo {
@@ -52,7 +53,5 @@ a {
   text-align: center;
   font-size: 20px;
   color: #fff;
-  position: relative;
-  top: 4px;
-  margin-right: 10px;
+  vertical-align: middle;
 }
