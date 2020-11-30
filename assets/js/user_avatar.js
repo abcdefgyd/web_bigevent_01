@@ -22,6 +22,7 @@ $(function(){
    // 1. 拿到用户选择的文件
     var file = e.target.files[0]
     //非空校验
+    
     if(file==undefined){
         return layer.msg('请选择图片')
     }
